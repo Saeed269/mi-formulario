@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulary</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+
+    <form <form action="https://submit.formkeep.com/formkeep-embed" method="POST">
+        <!-- Tu formulario aquí -->
+
+        <fieldset>
+            <legend>Informació Personal</legend>
+
+            <div>
+                <label for="ncomplet">Nom complet:</label>
+                <input type="text" id="ncomplet" name="ncomplet" placeholder="Josep María" autofocus required>
+            </div>
+
+            <div>
+                <label for="lastname">Cognom:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Martinez" required>
+            </div>
+
+            <div>
+                <label for="birth">Data de neixement:</label>
+                <input type="date" id="birth" name="birth" required>
+            </div>
+
+            <div>
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" placeholder="JosepMaría@email.com" required>
+            </div>
+
+            <div>
+                <label for="ncontrassenya">Nova contrassenya:</label>
+                <input type="password" id="ncontrassenya" name="ncontrassenya" placeholder="*********" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferències</legend>
+
+            <div>
+                <label for="preferences">Opinions:</label>
+                <input type="text" id="preferences" name="preferences" placeholder="M'agrada opinar sobre futbol"
+                    autocomplete="off">
+            </div>
+
+            <div>
+                <label for="payment">Tipus de pagament:</label>
+                <select id="payment" name="payment">
+                    <option value="diari">Diari</option>
+                    <option value="semanal">Setmanal</option>
+                    <option value="anual">Anual</option>
+                    <option value="mai" selected>Mai</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Acceptes les condicions d’ús?</label>
+                <input type="radio" id="si" name="condicions" value="si">
+                <label for="si">Sí</label>
+                <input type="radio" id="no" name="condicions" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <div>
+                <input type="hidden" id="frau" name="frau">
+            </div>
+        </fieldset>
+
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+
+        <div id="formkeep-embed" data-formkeep-url="https://formkeep.com/p/493e4d4e02788f898a4f35fe9352760d?embedded=1">
+        </div>
+
+        <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.formkeep.com/formkeep-embed.js"></script>
+
+        <!-- Get notified when the form is submitted, add your own code below: -->
+        <script>
+            const formkeepEmbed = document.querySelector('#formkeep-embed')
+
+            formkeepEmbed.addEventListener('formkeep-embed:submitting', _event => {
+                console.log('Submitting form...')
+            })
+
+            formkeepEmbed.addEventListener('formkeep-embed:submitted', _event => {
+                console.log('Submitted form...')
+            })
+        </script>
+
+    </form>
+</body>
+
+</html>

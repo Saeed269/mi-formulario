@@ -1,0 +1,85 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #d4c9c9; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: flex-start; /* Alineación en la parte superior */
+    height: 100vh; /* Altura completa de la ventana */
+    padding-top: 50px; /* Espacio desde la parte superior */
+}
+
+.container {
+    background-color: #1e1e1e; /* Fondo ligeramente más claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%; /* Ancho completo hasta el max-width */
+}
+
+h1, h2 {
+    color: #ff9800; /* Naranja brillante */
+    text-align: center;
+}
+
+fieldset {
+    border: none; /* Sin borde para un look limpio */
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.5em;
+    color: #ff9800; /* Color de título atractivo */
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333; /* Borde oscuro */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #333; /* Fondo de los inputs */
+    color: #0e0d0d; /* Texto claro en inputs */
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #ff9800; /* Borde naranja al enfocar */
+    outline: none;
+}
+
+button {
+    background-color: #ff9800; /* Botón naranja */
+    color: rgb(15, 15, 15);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Botón a ancho completo */
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e68a00; /* Color más oscuro al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #bbb; /* Color gris suave */
+}
